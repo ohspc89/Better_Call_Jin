@@ -5,6 +5,8 @@
 % and is now self-contained.
 % Annotated by Jinseok Oh [JO], 8/14/24
 
+
+
 %% get list of files
 % JO: Check where your eeblab2024 folder is.
 % '.' indicates the current path. '..' indicates the parent path.
@@ -13,11 +15,19 @@
 % '..' is /Users/nremec/Downloads/
 
 % this is where is data are on your computer, path added 8-24 **fix
-% JO: I think the line below should be similar to this one,
+% JO: I think the line below should be similar to the one I provided,
 % particularly if you're using (and updating) the 'SampleData' folder
 % inside 'EEGWISE-main' folder.
-DataDir = '/Applications/EEG/EEGWISE-main/SampleData/';
+% I will add one more variable... topPath
+% This will ALWAYS be your EEGWISE-main folder, the one you download from
+% Ran's GitHubRepository.
+topPath = '/Applications/EEG/EEGWISE-main/';
+DataDir = [topPath, 'SampleData/'];
 % DataDir = 'Applications/EEG/eeglab2024.1/SampleData/';
+
+% JO: Do this to add eeglab's path.
+% Change below and use your path - ask me question if you don't know what it is.
+addpath(genpath('/Users/joh/Downloads/eeglab2024.0/'))
 
 % modify the participant and visit session for analysis
 Pat = 'TD08'; Visit = 'Mon1';
@@ -26,6 +36,10 @@ Pat = 'TD08'; Visit = 'Mon1';
 % `strcat(text, text, text, ...)` concatenates text. 
 % Therefore, the value of the variable `folder` is 
 % '/Applications/EEG/EEGWISE-main/SampleData/TD08/Mon1/'.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% IMPORTANT NOTE                                        %
+% Your .fdt and .set files will be saved in this folder %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 folder = strcat(DataDir,Pat,'/',Visit,'/');
 % `dir(folder)` lists the files in a folder.
 % '*' is a wildcard character. It means 'ANYTHING'
@@ -65,7 +79,7 @@ end
 for i = 1:length(SessionDir)
     % for every i, changing from 1 to the number of .txt files in 'folder'
     % `extractEEG_biosemi_new(SessionDir, trial_idx)` is defined below.
-    extractEEG_biosemi_new(SessionDir, i)
+    extractEEG_biosemi_new(SessionDir, i, topPath)
     % This time `fprintf(FORMAT, A, B)`.
     % Check that there are two `%i` in the FORMAT: 'done with %i of %i\n'
     % `%i` means an integer.
@@ -86,7 +100,7 @@ disp('finished')
 %  and it saves each activity as a separate file
 %  the function is embeded inside, so it is only a single file -??
 
-function extractEEG_biosemi_new(SessionDir, trial_idx)
+function extractEEG_biosemi_new(SessionDir, trial_idx, topPath)
 % stitch EEG of specifified trial_types, convert to EEGLAB .set file,
 % and save to file directory
 % Input, SessionDir icnluding file directories
@@ -172,7 +186,9 @@ if true % JO. This is not necessary
     EEG = eeg_checkset(EEG);
 
     % Load channel file
-    EEG = pop_chanedit(EEG, 'lookup', './Dependencies/BioSemi_32Ch.ced', 'load', {'./Dependencies/BioSemi_32Ch.ced', 'filetype', 'autodetect'});
+    % JO: This is an annoying part. Check that 'BioSemi_32Ch.ced' is in your Current Folder.
+    EEG = pop_chanedit(EEG, 'lookup', [topPath, 'Dependencies/BioSemi_32Ch.ced'], 'load', ...
+        {[topPath, 'Dependencies/BioSemi_32Ch.ced'], 'filetype', 'autodetect'});
     EEG = eeg_checkset(EEG);
 
     % Re-reference to T7-T8
