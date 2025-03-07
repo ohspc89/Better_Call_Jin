@@ -21,8 +21,8 @@ bwt = readtable('lowbwt.csv');
 %    (hint: if you want values of a column(col) from a table(tbl),
 %     you use the command: `tbl.col`)
 figure(1)
-X=...
-Y=...
+X = ...;
+Y = ...;
 scatter(X,Y)
 
 % 1-2) An alternative way: `scatter(tbl, XVAR, YVAR)`
@@ -42,19 +42,23 @@ scatter(...)
 %    `repelem(V,N)` replicate elements of an array V
 sz = repelem([65,45,85,165,105], 20);
 figure(3)
+title('Varying marker size')
 scatter(...)
 
 % 3) scatter(X,Y,SZ,C) // C is a string or an array
 figure(4)
+title('Marker Color: Red')
 sz = 75;
 % Assign "red" to a variable `colors`
-colors = ;
+colors = ...;
 scatter(...) % Don't forget to use `colors`.
 
 % 4) Let's make C based on different categorical variable value
 %    In MATLAB, you need to use for-loop.
-%    Let's first define how long the `colors` vector should be
-clength = ...;
+%    Let's first define how long the `colors` vector should be.
+%    (Hint. The number of colors is the same as the number of points
+%     plotted)
+clength = length(...);
 %   a) sex: 'red' if 0, 'blue' otherwise.
 %      There can be different ways, but let's make use of the fact
 %      that sex has two levels: 0 and 1.
@@ -83,7 +87,7 @@ colors = repmat("red", 1, clength);
 % defined above as a string array. Right now, all elements are "red".
 % `colors(find(...)) = ...` is the command you need to run.
 % Please fill in ...
-colors(find(...)) = ...;
+colors(find(...)) = "blue";
 
 % Finally, plot the data indicating the sex difference
 figure(5)
@@ -91,8 +95,12 @@ hold on
 for i = 1:length(colors)
     scatter(X(i), Y(i), 65, colors(i))
 end
+qw1 = scatter(nan, nan, 'r');
+qw2 = scatter(nan, nan, 'b');
 hold off
-legend('Female', 'Male')
+legend([qw1, qw2], {'Female', 'Male'})
+xlabel('Gestational Age')
+ylabel('Systolic Blood Pressure')
 
 %   b) Can you do the same thing with the 'grmhem' variable of the table?
 %      This time, make colors to be "pink" for grmhem == 0
@@ -102,17 +110,13 @@ legend('Female', 'Male')
 % 5) We can use symbols instead of colors to indicate differences.
 %    Let's use the apgar5 variable.
 %    What's the distribution of ths variable?
-hist(bwt.apgar5)
+histogram(bwt.apgar5)
 %    Let's use three symbols: '+', '^', and 'o'.
 %    '+': if apgar5 value is less than 5
 %    '^': if apgar5 value is 5 or 6
 %    'o': if apgar5 value is greater than 6
 
-% Let's start with preparing a template.
-symbols = repmat(' ', 1, N);
-% Then replace ' ' with the symbols using logical indexing
-% similar to what we did when we created `colors`.
-% Here are some practices that will help you with logical indexing.
+% Here is a practice example that will help you with logical indexing.
 % Suppose there's an array we will be referencing.
 reference_arr = [2, 3, 4, 7];
 % You have another array you want to modify, based on the values
@@ -146,3 +150,39 @@ xlabel('Reference X')
 ylabel('Reference Y')
 
 % Now, let's finish task 5.
+
+% Let's start with preparing a template.
+symbols = repmat(' ', 1, clength);
+% Then replace ' ' with the symbols using logical indexing
+% similar to what we did when we created `colors`.
+
+% if apgar5 < 5, '+'
+symbols(...) = '+';
+% if apgar5 >=5 AND (&) apgar5 <= 6, '^'
+symbols(...) = '^';
+% if apgar5 > 6, 'o'
+symbols(...) = 'o';
+
+% Create figure 6
+figure(6)
+% Set the title to 'Figure 6'
+...
+% We will start looping. So you need this
+hold on
+% start looping
+for i=1:...
+    ...
+end
+% Manual legend - don't worry if you don't understand
+% this today.
+qw1 = scatter(nan, nan, 'k+');
+qw2 = scatter(nan, nan, 'k^');
+qw3 = scatter(nan, nan, 'ko');
+% Once the loop is completed, do this
+hold off
+% Manual legend - don't worry if you don't understand
+legend([qw1, qw2, qw3], {'apgar5 < 5', '5 <= apgar5 <= 6', 'apgar5 > 6'})
+% Make the X-axis label: 'Gestational Age'
+xlabel(...)
+% Make the Y-axis label: 'Systolic Blood Pressure'
+...
