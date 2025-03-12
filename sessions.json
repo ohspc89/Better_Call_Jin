@@ -1,0 +1,22 @@
+{
+    "session_1":{
+        "date":"2025-03-04",
+        "duration": "45 minutes",
+        "content": {"1": "discussion/brainstorming on what to do for the next sessions"},
+        "output": {"1": "slides explaining what p-hacking is (P-hacking.pptx)",
+            "2": "updated the document of questions (Wants vs Needs)"}
+    },
+    "session_2":{
+        "date":"2025-03-07",
+        "duration":"80 minutes",
+        "content": {"1": "worked on a MATLAB script JO prepared to practice visualization techniques including: constructing a scatterplot based on two variables; changing symbol colors based on the third variable"},
+        "output": {"1": "evaluated that learning data visualization with MATLAB is not appropriate at the moment due to the time constraint.",
+            "2": "agreed to learn the skill using SPSS - focus of the following sessions will be SPSS"}
+    },
+    "session_3":{
+        "date":"2025-03-12",
+        "duration":"XX minutes",
+        "content": "Will be updated",
+        "output": "will be updated"
+    }
+}
