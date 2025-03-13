@@ -15,8 +15,9 @@
     },
     "session_3":{
         "date":"2025-03-12",
-        "duration":"XX minutes",
-        "content": "Will be updated",
-        "output": "will be updated"
+        "duration":"90 minutes",
+        "content": {"1": "worked on modifying MATLAB scripts to preprocess Readiness Potential study data",
+            "2": "discussed good practices when working on different projects by adapting the existing code"},
+        "output": {"1": "modified MATLAB codes prepared and saved in a separate folder to process different set of data, accommodating different file names + etc."}
     }
 }
