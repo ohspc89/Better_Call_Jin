@@ -2,22 +2,36 @@
     "session_1":{
         "date":"2025-03-04",
         "duration": "45 minutes",
-        "content": {"1": "discussion/brainstorming on what to do for the next sessions"},
-        "output": {"1": "slides explaining what p-hacking is (P-hacking.pptx)",
+        "content": {
+            "1": "discussion/brainstorming on what to do for the next sessions"},
+        "output": {
+            "1": "slides explaining what p-hacking is (P-hacking.pptx)",
             "2": "updated the document of questions (Wants vs Needs)"}
     },
     "session_2":{
         "date":"2025-03-07",
         "duration":"80 minutes",
-        "content": {"1": "worked on a MATLAB script JO prepared to practice visualization techniques including: constructing a scatterplot based on two variables; changing symbol colors based on the third variable"},
-        "output": {"1": "evaluated that learning data visualization with MATLAB is not appropriate at the moment due to the time constraint.",
+        "content": {
+            "1": "worked on a MATLAB script JO prepared to practice visualization techniques including: constructing a scatterplot based on two variables; changing symbol colors based on the third variable"},
+        "output": {
+            "1": "evaluated that learning data visualization with MATLAB is not appropriate at the moment due to the time constraint.",
             "2": "agreed to learn the skill using SPSS - focus of the following sessions will be SPSS"}
     },
     "session_3":{
         "date":"2025-03-12",
         "duration":"90 minutes",
-        "content": {"1": "worked on modifying MATLAB scripts to preprocess Readiness Potential study data",
+        "content": {
+            "1": "worked on modifying MATLAB scripts to preprocess Readiness Potential study data",
             "2": "discussed good practices when working on different projects by adapting the existing code"},
-        "output": {"1": "modified MATLAB codes prepared and saved in a separate folder to process different set of data, accommodating different file names + etc."}
+        "output": {
+            "1": "modified MATLAB codes prepared and saved in a separate folder to process different set of data, accommodating different file names + etc."}
+    },
+    "session_4":{
+        "date":"2025-03-14",
+        "duration":"60 minutes",
+        "content": {
+            "1": "worked on tweaking features of scatterplots generated in SPSS"},
+        "output": {
+            "1": "work in progress - promised to finish following instructions and generate different scatterplots by next session" }
     }
 }
