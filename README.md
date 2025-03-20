@@ -1,1 +1,1 @@
-[Uploading DALL·E 2025-03-20 12.43.16 - A person making a call using a retro-style cell phone, depicted in the style of a 1920s newspaper print. The person is dressed in vintage clothing fro.webp…]()
+!["ChatGPT-Generated"](https://github.com/ohspc89/Better_Call_Jin/blob/main/Call_Jin-ChatGPT_Generated.webp?raw=true)
