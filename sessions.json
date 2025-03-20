@@ -33,5 +33,17 @@
             "1": "worked on tweaking features of scatterplots generated in SPSS"},
         "output": {
             "1": "work in progress - promised to finish following instructions and generate different scatterplots by next session" }
+    },
+    "session_5":{
+        "date":"2025-03-19",
+        "duration":"60 minutes",
+        "content": {
+            "1": "completed - drawing scatterplots and tweaking features as needed",
+            "2": "discussed kernels used in drawing a LOESS line",
+            "3": "statistics: meaning of high error bars; questions related to a recent journal club discussion"},
+        "output": {
+            "1": "confirmed that the student can draw scatterplots and overlay different trend line",
+            "2": "checked how the google document ('Wants vs Needs') is updated and used for learning",
+            "3": "discussed what is overlooked - focusing on the data analysis skills is important, but avoid getting stuck at it; a bigger goal (ex.proposal, defense) should always be prioritized over understanding the details of a new ML technique"}
     }
 }
