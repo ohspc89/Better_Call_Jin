@@ -12,7 +12,7 @@
         "date":"2025-03-07",
         "duration":"80 minutes",
         "content": {
-            "1": "worked on a MATLAB script JO prepared to practice visualization techniques including: constructing a scatterplot based on two variables; changing symbol colors based on the third variable"},
+            "1": "worked on a MATLAB script JO prepared (Visualization/250307/visualization_Mar7_25.m) to practice visualization techniques including: constructing a scatterplot based on two variables; changing symbol colors based on the third variable"},
         "output": {
             "1": "evaluated that learning data visualization with MATLAB is not appropriate at the moment due to the time constraint.",
             "2": "agreed to learn the skill using SPSS - focus of the following sessions will be SPSS"}
@@ -30,7 +30,7 @@
         "date":"2025-03-14",
         "duration":"60 minutes",
         "content": {
-            "1": "worked on tweaking features of scatterplots generated in SPSS"},
+            "1": "worked on tweaking features of scatterplots generated in SPSS (Visualization/250314/Visualization_Mar14_25.pdf)"},
         "output": {
             "1": "work in progress - promised to finish following instructions and generate different scatterplots by next session" }
     },
@@ -45,5 +45,28 @@
             "1": "confirmed that the student can draw scatterplots and overlay different trend line",
             "2": "checked how the google document ('Wants vs Needs') is updated and used for learning",
             "3": "discussed what is overlooked - focusing on the data analysis skills is important, but avoid getting stuck at it; a bigger goal (ex.proposal, defense) should always be prioritized over understanding the details of a new ML technique"}
+    },
+    "session_6":{
+        "date":"2025-03-21",
+        "duration":"60 minutes",
+        "content": {
+            "1": "worked on troubleshooting error messages while running EEG preprocessing pipeline using MATLAB"},
+        "output": {
+            "1": "error-free MATLAB code on the student's computer",
+            "2": "a pdf (MATLAB-coding/EEGWISE-commentary.pdf) explaining lines of the MATLAB code, demonstrating why a specific folder hierarchy should be kept"}
+    },
+    "session_7":{
+        "date":"2025-03-25",
+        "duration":"90 minutes",
+        "content": {
+            "1": "discussed how to modify a document on the supplementary analysis of the student's dissertation study; Two-way Repeated Measures ANOVA vs. non-parametric tests",
+            "2": "a pdf (Visualization/250319/Visualization_Mar19_25.pdf) was prepared; student still not completed",
+            "3": "a pdf on hypothesis testing (independent two-samples t-test + etc.; Statistics/hypothesis_testing_pt1.pdf) was prepared; not covered",
+            "4": "shared the progress on decyphering the EEG preprocessing code"},
+        "output": {
+            "1": "a document is prepared for the committee review",
+            "2": "the student promised that Visualization_Mar19_25.pdf will be reviewed by next week",
+            "3": "the student promised to review hypothesis_testing_pt1.pdf also by next week",
+            "4": "(Jin) test different options of the EEG preprocessing code"}
     }
 }
