@@ -68,5 +68,37 @@
             "2": "the student promised that Visualization_Mar19_25.pdf will be reviewed by next week",
             "3": "the student promised to review hypothesis_testing_pt1.pdf also by next week",
             "4": "(Jin) test different options of the EEG preprocessing code"}
+    },
+    "session_8":{
+        "date":"2025-03-29",
+        "duration":"90 minutes",
+        "content": {
+        "1": "managed to prepare plots exemplified in 'Visualization_Mar19_25.pdf'",
+        "2": "discussed the appropriate plot type for the data the student wanted to represent",
+        "3": "discussed that the student needs to act more autonomously - explore different visualization options and seek for feedback, instead of leaving everything to someone's hand"},
+        "output": {
+        "1": "confirmed that the student can make and edit a bar chart",
+        "2": "Visualization will not be covered explicitly anymore"}
+    },
+    "session_9":{
+        "date":"2025-04-01",
+        "duration":"90 minutes",
+        "content": {
+        "1": "discussed 'hypothesis_testing_pt1.pdf'",
+        "2": "discussed what a null hypothesis is",
+        "3": "student question: 'why bootstrapping?'"},
+        "output": {
+        "1": "(Jin) prepare another pdf explaining what a sampling distribution is & what bootstrapping is for"}
+    },
+    "session_10":{
+        "date":"2025-04-04",
+        "duration":"90 minutes",
+        "content":{
+        "1": "answered questions regarding the theoretical background of hypothesis testing/bootstrapping (demystifying_bootstrapping.pdf)",
+        "2": "discussed how much statistical knowledge is required to propose the student's dissertation project"},
+        "output":{
+        "1": "student had another opportunity to review concepts: 'sampling distribution'",
+        "2": "student spent time understanding the goal of bootstrapping",
+        "3": "student heard one more time that phd is not about preparing everything perfect - not convinced"}
     }
 }
