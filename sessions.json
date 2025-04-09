@@ -100,5 +100,13 @@
         "1": "student had another opportunity to review concepts: 'sampling distribution'",
         "2": "student spent time understanding the goal of bootstrapping",
         "3": "student heard one more time that phd is not about preparing everything perfect - not convinced"}
+    },
+    "session_11":{
+        "date":"2025-04-08",
+        "duration":"90 minutes",
+        "content":{
+            "1": "reviewed the student's proposal slides"},
+        "output":{
+            "1": "agreed to work on the slies until 4/15"}
     }
 }
