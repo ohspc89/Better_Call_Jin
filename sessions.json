@@ -108,5 +108,21 @@
             "1": "reviewed the student's proposal slides"},
         "output":{
             "1": "agreed to work on the slies until 4/15"}
+    },
+    "session_12":{
+        "date":"2025-04-11",
+        "duration":"90 minutes",
+        "content":{
+            "1": "reviewed the student's proposal slides"},
+        "output":{
+            "1": "figures updated & more animation used"}
+    },
+    "session_13":{
+        "date":"2025-04-15",
+        "duration":"90 minutes",
+        "content":{
+            "1": "reviewed the student's proposal slides"},
+        "output":{
+            "1": "reorganized slides - student passed"}
     }
 }
