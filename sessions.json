@@ -126,7 +126,7 @@
             "1": "reorganized slides - student passed"}
     },
     "session_14":{
-        "date": 2025-08-12",
+        "date": "2025-08-12",
         "duration":"90 minutes",
         "content":{
             "1": ["reviewed `convert_txt_to_set.m` and `extractEEG_biosemi_individual.m`.",
