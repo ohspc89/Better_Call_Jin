@@ -124,5 +124,23 @@
             "1": "reviewed the student's proposal slides"},
         "output":{
             "1": "reorganized slides - student passed"}
+    },
+    "session_14":{
+        "date": 2025-08-12",
+        "duration":"90 minutes",
+        "content":{
+            "1": ["reviewed `convert_txt_to_set.m` and `extractEEG_biosemi_individual.m`.",
+                "The two scripts are minor edits of `datapreparation_NEW_JO.m`, prepared 5 months ago.",
+                "Jin prepared them because he didn't know what `datapreparation_NEW_JO.m` was doing.",
+                "We did line-by-line review and discussed different functions including `fullfile`, `genpath`, `addpath`, `arrayfun/cellfun`, etc.",
+                "We agreed that at the next session we will revisit the same scripts one more time and move onto the next scripts."],
+            "2": ["`notes.m` is prepared for student's learning.",
+                "This script explains the work of `cellfun`, which will also help understand the work of `arrayfun`.",
+                "We will talk about this note next time as well."]
+        }
+        "output":{
+            "1": ["The student now has a better understanding of the scripts prepared to convert individual .txt file to a corresponding .set file.",
+                "Benefits of running codes and perform batch processing have been explained, although they need to be re-emphasized more."]
+        }
     }
 }
