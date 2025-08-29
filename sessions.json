@@ -142,5 +142,15 @@
             "1": ["The student now has a better understanding of the scripts prepared to convert individual .txt file to a corresponding .set file.",
                 "Benefits of running codes and perform batch processing have been explained, although they need to be re-emphasized more."]
         }
-    }
+    },
+    "session_16":{
+        "date": "2025-08-22",
+        "duration": "60 minutes",
+        "content":{
+            "1": "run .m script to find peaks in spectrograms and troubleshoot as needed"
+        },
+        "output":{
+            "1": "The student can now run the script and find peaks"
+        }
+    },
 }
