@@ -153,4 +153,28 @@
             "1": "The student can now run the script and find peaks"
         }
     },
+    "session_17":{
+        "date": "2025-08-29",
+        "duration": "90 minutes",
+        "content":{
+            "1": "explored the use of fooof algorithm in MATLAB"
+        },
+        "output":{
+            "1": "Decided to explore one wrapper option more thoroughly"
+        }
+    },
+    "session_18":{
+        "date": "2025-09-02",
+        "duration": "90 minutes",
+        "content":{
+            "1": "Checked that the fooof MATLAB wrapper works fine",
+            "2": "Discussed what the student needs to do using EEGLAB",
+            "3": "Pointed out that the student needs to find a previously annotated file"
+        },
+        "output":{
+            "1": "The student has a task: 1) concatenate trials, 2) read the concatenated file in EEGLAB GUI, 3) filter (low, high, notch), 4) run ICA",
+            "2": "The student will look for the annotated file that uses fooof",
+            "3": "A script to split the concatenated datasets needs to be prepared later"
+        }
+    },
 }
